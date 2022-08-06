@@ -9,6 +9,10 @@
 
 /* General Styles */
 
+html {
+  font-size: 16px;
+}
+
 body {
   background: #333;
   color: var(--text-color);
@@ -37,21 +41,21 @@ a {
 }
 
 .header__nav {
-  font-size: 1.2em;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  height: 3rem;
   padding: 1.3em 0;
 }
 
 .header__logo {
-  width: 50px;
+  width: 2.5rem;
   margin: 1em;
 }
 
 .header__title {
-  font-size: 2.1rem;
+  font-size: 1.75rem;
   color: var(--primary-color);
 }
 
@@ -61,7 +65,7 @@ a {
 }
 
 .header__search {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 1em;
 }
 
@@ -85,7 +89,6 @@ a {
 .header__links li a:hover {
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
-  font-size: 1.3rem;
 }
 
 .mbl-sidebar-button {
@@ -96,11 +99,11 @@ a {
 
 .main {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .showcase {
-  height: 550px;
+  height: 30rem;
   background: url(./img/showcase.png) no-repeat center center/cover;
   padding-bottom: 2em;
   margin-bottom: 2em;
@@ -114,15 +117,17 @@ a {
 .link-button {
   cursor: pointer;
   display: inline-block;
-  border: 1px solid var(--primary-color);
-  font-size: 1.2rem;
+  border: 2px solid var(--primary-color);
+  font-size: 1rem;
   font-weight: bold;
   padding: 0.5em 1.2em;
   background: #4444;
   color: var(--primary-color);
-  -webkit-text-stroke: 0.65px #000;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000,
+    -1px 1px 1px #000;
   margin: 1em 0;
   transition: var(--transition);
+  border-radius: 1rem;
 }
 
 .link-button:hover {
@@ -136,15 +141,17 @@ a {
 }
 
 .showcase__title {
-  font-size: 2.3rem;
-  -webkit-text-stroke: 0.8px #000;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000,
+    -1px 1px 1px #000;
 }
 
 .showcase__text {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: bold;
-  -webkit-text-stroke: 0.9px #000;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000,
+    -1px 1px 1px #000;
   color: var(--text-color);
 }
 
@@ -158,48 +165,48 @@ a {
 
 .cards__img {
   width: 100%;
-  height: 200px;
+  height: 15rem;
 }
 
 .cards__title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--primary-color);
   font-weight: bold;
   margin: 0.5em 0;
 }
 
 .cards__text {
-  font-size: 1.2rem;
-  height: 4.5em;
+  font-size: 1.15rem;
 }
 
 /* Banner Styles */
 
 .banner {
   width: 100%;
-  height: 350px;
+  height: 20rem;
   background: url(./img/banner.png) no-repeat center center/cover;
   margin-bottom: 2em;
 }
 
 .banner-content {
-  width: 40%;
-  height: 100%;
+  width: 45%;
   padding: 2em 0 0 3em;
 }
 
 .banner__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  -webkit-text-stroke: 1px #000;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000,
+    -1px 1px 1px #000;
   color: var(--primary-color);
 }
 
 .banner__text {
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   font-weight: bold;
-  -webkit-text-stroke: 0.85px #000;
-  margin: 0.8em 0;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000,
+    -1px 1px 1px #000;
+  margin: 0.25em 0;
 }
 
 /* Footer Styles */
@@ -209,7 +216,7 @@ a {
 }
 
 .f-links {
-  padding: 1em 2em;
+  padding: 0.5em 1em;
 }
 
 .f-links-container {
@@ -226,16 +233,16 @@ a {
 }
 
 .f-links-container li {
-  margin: 0.5em;
+  margin: 0.25em;
 }
 
 .f-links-container h4 {
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   color: var(--primary-color);
 }
 
 .f-links-container a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: var(--transition);
 }
 
@@ -244,7 +251,7 @@ a {
 }
 
 .f-links-container i {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin: 0.2em 0;
 }
 
@@ -253,26 +260,26 @@ a {
 }
 
 .f-copy__title {
-  font-size: 1.3rem;
-  padding: 1em 0 0.5em;
+  font-size: 1.1rem;
+  padding: 0.25em 0 0.25em;
   color: var(--primary-color);
 }
 
 .f-copy__text {
-  font-size: 1.1em;
-  padding-bottom: 0.7em;
+  font-size: 1em;
+  padding-bottom: 0.35em;
 }
 
 /* Social Media Footer Styles */
 
 .social {
-  margin: 2em;
+  margin: 0.5em;
 }
 
 .social__title {
   text-align: center;
-  padding: 0.5em 0;
-  font-size: 1.7rem;
+  padding: 0.25em 0;
+  font-size: 1.25rem;
   color: var(--primary-color);
 }
 
@@ -281,7 +288,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.3rem;
+  font-size: 1.5rem;
 }
 
 .links a {
@@ -298,6 +305,10 @@ a {
     width: 100%;
   }
 
+  .header__title {
+    font-size: 1.25rem;
+  }
+
   .header__links {
     display: block;
     position: absolute;
@@ -316,14 +327,13 @@ a {
   }
 
   .header__links li {
-    margin: 0.7em 0;
-    font-size: 1.65rem;
+    margin: 0.45em 0;
+    font-size: 1.25rem;
   }
 
   .header__links li a:hover {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
-    font-size: 1.75rem;
   }
 
   .news-cards {
@@ -335,17 +345,17 @@ a {
   }
 
   .banner {
-    height: 250px;
+    height: 15rem;
   }
 
   .banner-content {
     width: 90%;
-    padding: 1.2em 0 0 0.85em;
+    padding: 0.85em 0 0 0.5em;
   }
 
   .header__search {
     margin-right: 3em;
-    font-size: 2rem;
+    font-size: 1.55rem;
   }
 
   .mbl-sidebar-button {
@@ -353,13 +363,17 @@ a {
     position: absolute;
     right: 0.7em;
     z-index: 2;
-    font-size: 2.5rem;
+    font-size: 1.85rem;
   }
 }
 
-@media (min-width: 481px) and (max-width: 720px) {
+@media (min-width: 481px) and (max-width: 1023px) {
   .header {
     width: 100%;
+  }
+
+  .header__title {
+    font-size: 1.25rem;
   }
 
   .header__links {
@@ -380,14 +394,13 @@ a {
   }
 
   .header__links li {
-    margin: 0.7em 0;
-    font-size: 1.65rem;
+    margin: 0.5em 0;
+    font-size: 1.25rem;
   }
 
   .header__links li a:hover {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
-    font-size: 1.75rem;
   }
 
   .news-cards {
@@ -400,7 +413,7 @@ a {
 
   .header__search {
     margin-right: 3em;
-    font-size: 2rem;
+    font-size: 1.55rem;
   }
 
   .mbl-sidebar-button {
@@ -408,6 +421,6 @@ a {
     position: absolute;
     right: 0.7em;
     z-index: 2;
-    font-size: 2.5rem;
+    font-size: 1.85rem;
   }
 }
